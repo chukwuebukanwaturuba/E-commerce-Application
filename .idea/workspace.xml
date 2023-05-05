@@ -4,7 +4,663 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5945cc8-2828-4315-b6a0-c20ba6e39171" name="Changes" comment="" />
+    <list default="true" id="f5945cc8-2828-4315-b6a0-c20ba6e39171" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/dto/AdminDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/dto/CartDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/model/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/model/Wishlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/repository/AdminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/repository/CartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/serviceImplementation/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/serviceImplementation/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/serviceImplementation/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/serviceImplementation/UsersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/css/normalize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/img/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/js/jquery-1.11.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/js/jquery.nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shAutoloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushAS3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushAppleScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushBash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushCSharp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushColdFusion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushCpp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushCss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushDelphi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushDiff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushErlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushGroovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushJScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushJava.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushJavaFX.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushPerl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushPhp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushPlain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushPowerShell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushPython.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushRuby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushSass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushScala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushSql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushVb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shBrushXml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/scripts/shLegacy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCore.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCoreDjango.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCoreEclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCoreEmacs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCoreFadeToGrey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCoreMDUltra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCoreMidnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shCoreRDark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shThemeDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shThemeDjango.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shThemeEclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shThemeEmacs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shThemeFadeToGrey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shThemeMDUltra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shThemeMidnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/Aroma Shop-doc/syntax-highlighter/styles/shThemeRDark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Fevicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/add.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/blog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/blog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/blog3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/c6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/cat-post/cat-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/cat-post/cat-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/cat-post/cat-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/causes/causes-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/causes/causes-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/causes/causes-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/feature-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/latest-post/l-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/latest-post/l-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/latest-post/l-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/latest-post/l-post-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/main-blog/m-blog-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/main-blog/m-blog-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/main-blog/m-blog-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/main-blog/m-blog-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/main-blog/m-blog-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/next.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/popular-post/post1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/popular-post/post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/popular-post/post3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/popular-post/post4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/post-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/post-img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blog/prev.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/cart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/cart/cart1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/cart/cart2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/cart/cart3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/category/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/category/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/category/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/category/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/category/c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/category/s-p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/gallery/r1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/gallery/r2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/gallery/r3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/gallery/r5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/gallery/r7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/gallery/r8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/home/hero-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/home/hero-slide1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/home/hero-slide2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/home/hero-slide3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/home/parallax-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/Image-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/Image-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/Image-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/Image-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/Image-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/Image-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/Image-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/Image-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/ins-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/ins-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/ins-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/ins-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/ins-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/instagram/ins-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/Iphone 11 Pro.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/Iphone11.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/JBL-boombox.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/PlayStation-5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/iPhone14ProMax.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/iPhone_12_White_34FL_iPhone_12.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/iphone-11-pro-max.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/iphonecharger.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/iphoneearbud.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/iphoneearphone.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product-sm-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/product8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/ps5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/review-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/review-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/product/review-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/r9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_btn.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_category.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_checkout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_confirmation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_instagram.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_register.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_section-intro.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_single-product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_tracking.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/theme/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/bootstrap/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/fontawesome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/jquery.ajaxchimp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/jquery/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/linericon/fonts/Linearicons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/linericon/fonts/Linearicons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/linericon/fonts/Linearicons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/linericon/fonts/Linearicons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/linericon/fonts/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/linericon/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/mail-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/nice-select/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/nice-select/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/nouislider/nouislider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/nouislider/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/owl-carousel/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/owl-carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/owl-carousel/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/skrollr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/Italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/agenda.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/alarm-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/align-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/align-justify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/align-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/align-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/anchor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/android.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/angle-double-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/angle-double-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/angle-double-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/angle-double-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/angle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/angle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/angle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/angle-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/announcement.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/archive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-circle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-circle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-circle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-circle-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-top-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-top-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrows-corner.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrows-horizontal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/arrows-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/back-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/back-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/bar-chart-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/bar-chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/basketball.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/blackboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/bolt-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/bolt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/bookmark-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/bookmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/briefcase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/brush-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/brush.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/car.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/check-box.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/clip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/clipboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/cloud-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/cloud-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/cloud.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/comment-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/comments-smiley.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/comments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-backward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-eject.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-forward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-pause.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-record.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-shuffle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-skip-backward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-skip-forward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/control-stop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/credit-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/css3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/cup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/cut.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/desktop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/direction-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/direction.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/dribbble.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/dropbox-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/dropbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/drupal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/envelope.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/eraser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/exchange-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/export.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/face-sad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/face-smile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/files.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/filter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/flag-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/flag-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/flickr-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/flickr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/folder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/gallery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/game.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/gift.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/hand-drag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/hand-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/hand-point-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/hand-point-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/hand-point-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/hand-point-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/hand-stop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/harddrive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/harddrives.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/headphone-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/headphone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/heart-broken.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/heart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/help-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/help.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/html5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/hummer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/id-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/import.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/infinite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/info-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/ink-pen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/joomla.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/jsfiddle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/key.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layers-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layers.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-accordion-list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-accordion-merged.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-accordion-separated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-column2-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-column2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-column3-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-column3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-column4-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-column4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-cta-btn-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-cta-btn-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-cta-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-cta-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-cta-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-grid2-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-grid2-thumb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-grid2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-grid3-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-grid3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-grid4-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-grid4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-line-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-list-large-image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-list-post.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-list-thumb-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-list-thumb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-center-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-left-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-overlay-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-overlay-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-overlay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-right-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-media-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-menu-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-menu-separated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-menu-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-sidebar-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-sidebar-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-sidebar-none.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-sidebar-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-slider-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-slider.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-tab-min.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-tab-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-tab-window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-width-default-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-width-default.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout-width-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/layout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/light-bulb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/line-dashed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/line-dotted.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/line-double.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/linux.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/list-ol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/location-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/location-pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/loop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/magnet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/map-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/marker-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/marker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/medall-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/medall.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/menu-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/microphone-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/microphone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/microsoft-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/microsoft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/more-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/more.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/mouse-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/mouse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/music-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/music.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/na.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/new-window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/notepad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/package.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/paint-bucket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/paint-roller.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/palette.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/panel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/paragraph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pencil-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pencil-alt2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pie-chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pin-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pin2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pinterest-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pinterest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/plug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/power-off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/printer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/pulse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/quote-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/quote-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/receipt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/reddit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/reload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/rocket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/rss-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/rss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/ruler-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/ruler-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/ruler-pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/ruler.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/save-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/save.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/server.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/settings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/share-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/share.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/sharethis-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/sharethis.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shield.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shift-left-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shift-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shift-right-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shift-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shopping-cart-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shopping-cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/shortcode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/signal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/skype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/slice.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/smallcap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/soundcloud.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/split-h.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/split-v-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/split-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/spray.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/stack-overflow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/stamp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/stats-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/stats-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/support.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/tablet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/tag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/target.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/text.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/themify-favicon-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/themify-favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/themify-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/thought.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/thumb-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/thumb-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/ticket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/time.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/timer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/trello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/truck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/tumblr-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/tumblr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/twitter-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/underline.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/unlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/unlock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/uppercase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/vector.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/video-camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/video-clapper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/view-grid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/view-list-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/view-list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/vimeo-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/vimeo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/volume.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/wallet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/wand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/wheelchair.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/widget-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/widget.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/widgetized.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/wordpress.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/world.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/write.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/yahoo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/zip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/zoom-in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/SVG/zoom-out.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/Themify IconFonts 5-23-2014.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/demo-files/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/ie7/ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/ie7/ie7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendors/themify-icons/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/add_product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/single-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week7updated/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week7updated/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week7updated/model/UsersModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/model/UsersModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week7updated/repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/repository/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week7updated/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week7updated/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personal_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/personal_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/week7updated/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/week7updated/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/week7updated/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/week7updated/controller/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/week7updated/model/UsersModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/week7updated/model/UsersModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/week7updated/repository/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/week7updated/repository/UsersRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/week7updated/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/week7updated/service/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/personal_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/personal_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register_page.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +670,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -25,10 +682,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="2NcB5EXjGMcWXZrNJZY96OWzyrf" />
@@ -37,35 +694,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "bdce9987381c744c6afcf45195bd96f9",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/decagon/Desktop/Week6Profect/Week7-updated&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;bdce9987381c744c6afcf45195bd96f9&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.week7updated.serviceImplementation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img/product" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/css/css" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.week7updated.serviceImplementation" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,7 +756,16 @@
       <option name="presentableId" value="Default" />
       <updated>1679953307188</updated>
       <workItem from="1679953308588" duration="27901000" />
-      <workItem from="1680056418072" duration="5624000" />
+      <workItem from="1680056418072" duration="9560000" />
+      <workItem from="1680161128683" duration="87203000" />
+      <workItem from="1680962687109" duration="28630000" />
+      <workItem from="1681555546716" duration="7985000" />
+      <workItem from="1681767716754" duration="730000" />
+      <workItem from="1681928134574" duration="1816000" />
+      <workItem from="1682277079759" duration="399000" />
+      <workItem from="1682858029828" duration="9742000" />
+      <workItem from="1682887566618" duration="2464000" />
+      <workItem from="1683285890940" duration="347000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aroma Shop - Login</title>
+    <link rel="icon" th:href="@{/img/Fevicon.png}" type="image/png">
+    <link rel="stylesheet" th:href="@{/vendors/bootstrap/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/vendors/fontawesome/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/vendors/themify-icons/themify-icons.css}">
+    <link rel="stylesheet" th:href="@{/vendors/linericon/style.css}">
+    <link rel="stylesheet" th:href="@{/vendors/owl-carousel/owl.theme.default.min.css}">
+    <link rel="stylesheet" th:href="@{/vendors/owl-carousel/owl.carousel.min.css}">
+    <link rel="stylesheet" th:href="@{/vendors/nice-select/nice-select.css}">
+    <link rel="stylesheet" th:href="@{/vendors/nouislider/nouislider.min.css}">
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<!--================ Start Header Menu Area =================-->
+<header class="header_area">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo_h" href="index.html"><img th:src="@{/img/logo.png}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                        <li class="nav-item"><a class="nav-link" th:href="@{index.html}">Home</a></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">My Shop</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="category.html">Products</a></li>
+                                <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+                                <li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">Login/SignUp</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" th:href="@{/login}">Login</a></li>
+                                <li class="nav-item"><a class="nav-link" th:href="@{/register}">Register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--================ End Header Menu Area =================-->
+
+<!-- ================ start banner area ================= -->
+<section class="blog-banner-area" id="category">
+    <div class="container h-100">
+        <div class="blog-banner">
+            <div class="text-center">
+                <h1>Welcome Admin</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================ end banner area ================= -->
+
+
+
+<!--================Cart Area =================-->
+<section class="cart_area">
+    <div class="container">
+        <div class="cart_inner">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Product Category</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Product Image URL</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <form class="row login_form" method="post" th:action="@{/addProduct}" th:object="${products}" id="contactForm" >
+                    <tr>
+                        <td class="col-md-12 form-group">
+                            <input type="text" class="form-control" name="productName" th:field="*{productName}"placeholder="Product Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'">
+                        </td>
+                        <td class="col-md-12 form-group">
+                            <input type="text" class="form-control" style="width:100px" name="category" th:field="*{category}"placeholder="Category" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Category'">
+                        </td>
+                        <td class="col-md-12 form-group">
+                            <input type="text" class="form-control" style="width:100px" name="price" th:field="*{price}"placeholder="Price" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Price'">
+                        </td>
+                        <td class="col-md-12 form-group">
+                            <input type="text" class="form-control" style="width:120px" name="photoUrl" th:field="*{photoUrl}"placeholder="Product Image URL" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Image URL'">
+                        </td>
+                        <td class="col-md-12 form-group">
+                            <button type="submit" value="submit" class="button button-login w-100">Add Product</button>
+                        </td>
+                    </tr>
+                    </form>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--================End Cart Area =================-->
+<section class="cart_area">
+    <div class="container">
+        <div class="cart_inner">
+            <div class="table-responsive">
+                <table class="table" th:object="${productList}">
+                    <thead>
+                    <tr>
+                        <th scope="col">Product Id</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Product Category</th>
+                        <th scope="col">Price</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="product : ${productList}" th:if="${productList != null}">
+                        <td>
+                            <h5 th:text="${product.id}"></h5>
+                        </td>
+                        <td>
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img style="width: 40px; height: 40px" th:src="@{/img/product/{id}(id=${product.getPhotoUrl()})}" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h5 th:text="${product.productName}"></h5>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <h5 th:text="${product.category}"></h5>
+                        </td>
+                        <form method="post" th:action="@{/updatePrice}">
+                            <input type="hidden" name="id" th:value="${product.id}">
+                            <td>
+                                <input type="number" name="price" th:value="${product.price}">
+                            </td>
+                            <td class="col-md-12 form-group">
+                                <button type="submit" class="button button-login w-100">Update Price</button>
+                            </td>
+                        </form>
+
+                        <td class="col-md-12 form-group">
+                            <a th:href="@{/deleteProduct/{id}(id=${product.getId()})}" class="button button-login w-100">Delete Product</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--================ Start footer Area  =================-->
+<footer>
+    <div class="footer-area footer-only">
+        <div class="container">
+            <div class="row section_gap">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-footer-widget tp_widgets ">
+                        <h4 class="footer_title large_title">Our Mission</h4>
+                        <p>
+                            So seed seed green that winged cattle in. Gathering thing made fly you're no
+                            divided deep moved us lan Gathering thing us land years living.
+                        </p>
+                        <p>
+                            So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved
+                        </p>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget tp_widgets">
+                        <h4 class="footer_title">Quick Links</h4>
+                        <ul class="list">
+                            <li><a th:href="@{#}">Home</a></li>
+                            <li><a th:href="@{#}">Product</a></li>
+                            <li><a th:href="@{#}">Shopping Cart</a></li>
+                            <li><a th:href="@{#}">Product CheckOut</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-footer-widget tp_widgets">
+                        <h4 class="footer_title">Contact Us</h4>
+                        <div class="ml-40">
+                            <p class="sm-head">
+                                <span class="fa fa-location-arrow"></span>
+                                Head Office
+                            </p>
+                            <p>123, Main Street, Your City</p>
+
+                            <p class="sm-head">
+                                <span class="fa fa-phone"></span>
+                                Phone Number
+                            </p>
+                            <p>
+                                +123 456 7890 <br>
+                                +123 456 7890
+                            </p>
+
+                            <p class="sm-head">
+                                <span class="fa fa-envelope"></span>
+                                Email
+                            </p>
+                            <p>
+                                free@infoexample.com <br>
+                                www.infoexample.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row d-flex">
+                <p class="col-lg-12 footer-text text-center">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--================ End footer Area  =================-->
+
+
+
+<script th:src="@{/vendors/jquery/jquery-3.2.1.min.js}"></script>
+<script th:src="@{/vendors/bootstrap/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/vendors/skrollr.min.js}"></script>
+<script th:src="@{/vendors/owl-carousel/owl.carousel.min.js}"></script>
+<script th:src="@{/vendors/nice-select/jquery.nice-select.min.js}"></script>
+<script th:src="@{/vendors/jquery.ajaxchimp.min.js}"></script>
+<script th:src="@{/vendors/mail-script.js}"></script>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

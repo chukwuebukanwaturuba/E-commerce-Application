@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Register page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
 <div id="container">
-    <form method="post" action="/register" th:object="${user}">
+    <form method="post" th:action="@{/register}" th:object="${user}">
     <h3>Register</h3>
     <div class="inputwithicon"><i class="fa fa-envelope"></i>
         <input th:field="*{name}" type="text" name="name" placeholder="name" required>
